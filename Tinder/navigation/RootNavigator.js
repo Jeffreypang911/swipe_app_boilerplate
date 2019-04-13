@@ -1,8 +1,9 @@
 import React from 'react';
-import { StackNavigator } from 'react-navigation';
+import { createStackNavigator } from 'react-navigation';
 import TabNavigator from './TabNavigator.js';
+import { createAppContainer } from 'react-navigation';
 
-const RootStackNavigator = StackNavigator(
+const RootStackNavigator = createStackNavigator(
   {
     Main: {
       screen: TabNavigator,
@@ -10,8 +11,10 @@ const RootStackNavigator = StackNavigator(
   }
 );
 
+const AppContainer = createAppContainer(RootStackNavigator);
+
 export default class RootNavigator extends React.Component {
   render() {
-    return <RootStackNavigator/>;
+    return <AppContainer/>;
   }
 }

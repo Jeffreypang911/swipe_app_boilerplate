@@ -2,9 +2,9 @@ import React from 'react';
 import Home from '../screens/Home';
 import Profile from '../screens/Profile';
 import Matches from '../screens/Matches';
-import { createMaterialTopTabNavigator } from 'react-navigation';
+import { TabNavigator } from 'react-navigation';
 
-export default createMaterialTopTabNavigator(
+export default TabNavigator(
   {
     Profile: {
       screen: Profile,
@@ -29,13 +29,13 @@ export default createMaterialTopTabNavigator(
     navigationOptions: {
       header: null
     },
-    tabBarPosition: 'bottom',
+    tabBarPosition: 'top',
     initialRouteName: 'Home',
     animationEnabled: true,
     swipeEnabled: true,
     tabBarOptions: {
       style: {
-        height: 100
+        height: 75
       },
     }
   }

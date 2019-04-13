@@ -6,7 +6,7 @@ import {
   View
 } from 'react-native';
 
-class Home extends React.Component {
+class Matches extends React.Component {
   state = {}
 
   componentWillMount() {}
@@ -14,10 +14,10 @@ class Home extends React.Component {
   render() {
     return (
      <View>
-      <Text>Home Test</Text>
+      <Text>Matches</Text>
      </View>
     )
   }
 }
 
-export default Home;
+export default Matches;

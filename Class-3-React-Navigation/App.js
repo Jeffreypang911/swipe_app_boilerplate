@@ -1,7 +1,5 @@
 import React from 'react';
-import styles from './styles.js'
-import Home from './screens/Home.js'
-import Navigation from './navigation/RootNavigator.js'
+import RootNavigator from './navigation/RootNavigator.js'
 import { 
   Text, 
   View 
@@ -10,7 +8,7 @@ import {
 export default class App extends React.Component {
   render() {
     return (
-      <Navigation/>
+      <RootNavigator/>
     );
   }
 }

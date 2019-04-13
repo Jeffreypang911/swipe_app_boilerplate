@@ -10,9 +10,9 @@
     ],
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/tinder-icon.png",
     "splash": {
-      "image": "./assets/images/splash.png",
+      "image": "./assets/tinder-splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
