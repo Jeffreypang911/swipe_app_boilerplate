@@ -1,5 +1,5 @@
-export function login(input){
+export function login(){
     return function(dispatch){
-      dispatch({ type: 'LOGIN', payload: input });
+      dispatch({ type: 'LOGIN', payload: 'test' });
     }
   }

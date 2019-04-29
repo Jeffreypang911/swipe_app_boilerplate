@@ -11,12 +11,13 @@
     "preset": "jest-expo"
   },
   "dependencies": {
+    "@shoutem/ui": "^0.23.16",
     "@expo/samples": "2.1.1",
     "expo": "^32.0.0",
-    "react": "16.5.0",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-32.0.0.tar.gz",
+    "react": "16.6.3",
+    "react-native": "^0.57.1",
     "react-navigation": "^3.7.1",
-    "react-redux": "^7.0.2",
+    "react-redux": "^6.0.1",
     "redux": "^4.0.1",
     "redux-thunk": "^2.3.0"
   },
