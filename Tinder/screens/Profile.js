@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from '../styles'
-
+import { connect } from 'react-redux'
 import { 
   Text, 
   View
@@ -9,15 +9,23 @@ import {
 class Profile extends React.Component {
   state = {}
 
-  componentWillMount() {}
+  componentWillMount() {
+    console.log(this.props.user)
+  }
 
   render() {
     return (
-     <View>
-      <Text>Profile</Text>
+    <View style={styles.container}>
+      <Text>{this.props.user.name} HELLO</Text>
      </View>
     )
   }
 }
 
-export default Profile;
+function mapStateToProps(state) {
+  return {
+    user: state.user
+  };
+}
+
+export default connect(mapStateToProps)(Profile);

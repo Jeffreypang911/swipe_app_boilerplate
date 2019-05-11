@@ -1,10 +1,10 @@
 import React from 'react';
 import styles from '../styles'
-import { login } from '../redux/actions';
 import RootNavigator from '../navigation/RootNavigator';
 import { connect } from 'react-redux';
+import { login } from '../redux/actions'
 import * as firebase from 'firebase';
-import firebaseConfig from '../config/firebase.js';
+import firebaseConfig from '../config/firebase.js'
 firebase.initializeApp(firebaseConfig);
 
 import { 
@@ -19,7 +19,7 @@ class Login extends React.Component {
   componentWillMount() {
     firebase.auth().onAuthStateChanged((user) => {
       if (user != null) {
-        this.props.dispatch(login(true))
+        this.props.dispatch(login(user))
         console.log("We are authenticated now!" + JSON.stringify(user));
       }
     });
